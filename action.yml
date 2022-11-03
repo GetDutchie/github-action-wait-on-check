@@ -74,5 +74,5 @@ runs:
         RUNNING_WORKFLOW_NAME: ${{ inputs.running-workflow-name }}
         API_ENDPOINT: ${{ inputs.api-endpoint }}
 branding:
-  icon: "check-circle"
+  icon: "clock"
   color: "green"
