@@ -127,7 +127,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Wait for tests to succeed
-        uses: lewagon/wait-on-check-action@v1.2.0
+        uses: GetDutchie/github-action-wait-on-check@v1.0.0
         with:
           ref: master
           check-name: test
@@ -235,7 +235,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Wait for tests to succeed
-        uses: lewagon/wait-on-check-action@v1.2.0
+        uses: GetDutchie/github-action-wait-on-check@v1.0.0
         with:
           ref: ${{ github.ref }}
           check-name: 'Run tests'
@@ -288,5 +288,4 @@ A workflow named "wait_omitting-check-name" waits for the two simple-tasks, whil
 
 <!-- Links -->
 
-[rspec_shield]: https://github.com/lewagon/wait-on-check-action/workflows/RSpec%20tests/badge.svg
 [checks_api]: https://developer.github.com/v3/checks/runs/#list-check-runs-for-a-git-reference
